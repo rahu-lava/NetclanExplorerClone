@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/card_border"
+                android:paddingVertical="12dp">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp">
+
+                    <TextView
+                        android:id="@+id/textV11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginHorizontal="20dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Jeshma Jayprakash"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="16sp"
+
+
+                        />
+
+
+                    <TextView
+                        android:id="@+id/textV44"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textV11"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Mumbai,"
+                        android:textColor="@color/secondaryColor"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textV55"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textV11"
+                        android:layout_marginVertical="5dp"
+                        android:layout_toRightOf="@id/textV44"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text=" within 300-400 m"
+                        android:textColor="@color/secondaryColor"
+                        android:textSize="14sp"
+
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar3"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textV55"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginHorizontal="20dp"
+                        android:max="100"
+                        android:progress="53"
+                        android:progressTint="@color/darkGrey" />
+
+                    <TextView
+                        android:id="@+id/textV66"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textV55"
+                        android:layout_marginStart="-12dp"
+                        android:layout_toRightOf="@+id/progressBar3"
+                        android:text="Profile Score - 53%"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView88"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_below="@id/progressBar3"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="2dp"
+                        app:srcCompat="@drawable/phone_call" />
+
+                    <ImageView
+                        android:id="@+id/imageView99"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_below="@id/progressBar3"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@id/imageView88"
+                        app:srcCompat="@drawable/add_friend" />
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        app:srcCompat="@drawable/gps"
+                        android:layout_below="@id/progressBar3"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@id/imageView99"
+                        />
+
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/textV12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeLayout3"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="3dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text='Hi community! We have great deals for you. Check us out!!'
+                    android:textColor="@color/secondaryColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textV13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textV12"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Computer Store"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageV44"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                app:shapeAppearanceOverlay="@style/customImageBorder"
+                app:srcCompat="@drawable/profile_pic5" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/card_border"
+                android:paddingVertical="12dp">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp">
+
+                    <TextView
+                        android:id="@+id/textV1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginHorizontal="20dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Jeshma Jayprakash"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="16sp"
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/textV3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginHorizontal="20dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="+ INVITE"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textV4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textV1"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Mumbai,"
+                        android:textColor="@color/secondaryColor"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textV5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/secondaryColor"
+                        android:layout_below="@id/textV1"
+                        android:layout_toRightOf="@id/textV4"
+                        android:layout_marginTop="3dp"
+                        android:text=" within 300-400 m"
+                        android:textSize="14sp"
+
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar2"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textV5"
+                        android:layout_alignParentLeft="true"
+
+                        android:layout_marginHorizontal="20dp"
+
+                        android:max="100"
+                        android:progress="53"
+                        android:progressTint="@color/darkGrey" />
+
+                    <TextView
+                        android:id="@+id/textV6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textV5"
+                        android:layout_marginStart="-12dp"
+                        android:layout_toRightOf="@+id/progressBar2"
+                        android:text="Profile Score - 53%"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        app:srcCompat="@drawable/phone_call"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_below="@id/progressBar2"
+                        android:layout_alignParentLeft="true"
+                        />
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="2dp"
+                        app:srcCompat="@drawable/add_friend"
+                        android:layout_marginStart="15dp"
+                        android:layout_below="@id/progressBar2"
+                        android:layout_toRightOf="@id/imageView8"
+                        />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearlayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeLayout3"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textV7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/primaryColor"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="UI UX Designer"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="13dp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="3dp"
+                        android:background="@color/lightGrey2" />
+
+                    <TextView
+                        android:id="@+id/textV8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="3dp"
+                        android:textColor="@color/primaryColor"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="1 year of experience"
+                        android:textSize="14sp" />
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textV10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearlayout2"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="3dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text='Hi community! I am available to your Service'
+                    android:textColor="@color/secondaryColor"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageV4"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                app:shapeAppearanceOverlay="@style/customImageBorder"
+                app:srcCompat="@drawable/profile_pic5" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

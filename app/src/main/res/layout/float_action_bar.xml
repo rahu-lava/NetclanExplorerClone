@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_expandDirection="up"
+        app:fab_labelsPosition="left"
+        app:fab_labelStyle="@style/floatText"
+        app:fab_addButtonColorNormal="@color/primaryColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        >
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/heart"
+            app:fab_colorNormal="@color/floatMiniColor"
+            app:fab_size="mini"
+            app:fab_title="Dating"
+            />
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_size="mini"
+            app:fab_colorNormal="@color/floatMiniColor"
+            app:fab_icon="@drawable/wedding_rings"
+            app:fab_title="Matrimony"
+            />
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/shopping_bag"
+            app:fab_colorNormal="@color/floatMiniColor"
+            app:fab_size="mini"
+            app:fab_title="Buy-Sell-Rent"
+            />
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/floatMiniColor"
+            app:fab_size="mini"
+            app:fab_icon="@drawable/business_cards"
+            app:fab_title="Business Cards"
+            />
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/hashtag_solid"
+            app:fab_colorNormal="@color/floatMiniColor"
+            app:fab_size="mini"
+            app:fab_title="NetClan Group"
+            />
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/floatMiniColor"
+            app:fab_size="mini"
+            app:fab_icon="@drawable/briefcase"
+            app:fab_title="Jobs"
+            />
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/floatMiniColor"
+            app:fab_size="mini"
+            app:fab_icon="@drawable/note"
+            app:fab_title="Notes"
+            />
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</FrameLayout>

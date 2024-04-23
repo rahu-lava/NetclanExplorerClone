@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingHorizontal="12dp"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_weight="8"
+        android:background="@drawable/custom_edittext"
+        android:drawableStart="@drawable/ic_search3"
+
+        android:drawablePadding="13dp"
+        android:ems="10"
+        android:layout_marginHorizontal="12dp"
+        android:inputType="text"
+        android:padding="10dp"
+        android:hint="Search.."
+        android:textSize="11dp" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="12dp"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:src="@drawable/ic_filter3"
+
+        />
+
+</LinearLayout>

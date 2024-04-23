@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="7dp"
+                android:paddingVertical="12dp"
+                android:background="@drawable/card_border"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jeshma Jayprakash"
+                        android:textColor="@color/primaryColor"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="16sp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_alignParentLeft="true"
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/primaryColor"
+                        android:layout_marginHorizontal="20dp"
+                        android:text="+ INVITE" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Mumbai | HR"
+                        android:textColor="@color/secondaryColor"
+                        android:layout_below="@+id/textView"
+                        android:layout_marginTop="3dp"
+                        android:textSize="14sp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_alignParentLeft="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Within 300-400 m"
+                        android:textSize="14sp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_below="@id/textView4"
+                        android:layout_alignParentLeft="true"
+
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:progress="53"
+                        android:max="100"
+
+                        android:progressTint="@color/darkGrey"
+
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_below="@id/textView5"
+                        android:layout_alignParentLeft="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView5"
+                        android:layout_toRightOf="@+id/progressBar"
+                        android:textSize="13sp"
+                        android:layout_marginStart="-12dp"
+                        android:text="Profile Score - 53%" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_below="@+id/relativeLayout3"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="12sp"
+                        android:layout_height="12sp"
+                        android:id="@+id/imageView5"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_coffee" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="3dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="14sp"
+                        android:textColor="@color/brown"
+                        android:layout_weight="1"
+                        android:text="Coffee" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="12dp"
+                        android:layout_gravity="center"
+                        android:background="@color/lightGrey2"
+                        android:layout_marginHorizontal="3dp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="12sp"
+                        android:layout_height="12sp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_business" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="3dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="14sp"
+                        android:textColor="@color/red"
+                        android:layout_weight="1"
+                        android:text="Business" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="12dp"
+                        android:layout_gravity="center"
+                        android:background="@color/lightGrey2"
+                        android:layout_marginHorizontal="3dp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="12sp"
+                        android:layout_height="12sp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/friends" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_marginHorizontal="3dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="14sp"
+                        android:textColor="@color/darkYellow"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Friendship" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearlayout"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="14sp"
+                    android:textColor="@color/secondaryColor"
+                    android:layout_marginVertical="3dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:text='Hi community! I am open to new connections"😊"' />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_below="@+id/textView10"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:textSize="14sp"
+                    android:text="Adaptable professional with extensive experience providing first-class results. Meet job demands and deadlines through diligent work-ethic and dedication to quality." />
+
+            </RelativeLayout>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageView4"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                app:srcCompat="@drawable/profile_pic5"
+                app:shapeAppearanceOverlay="@style/customImageBorder"
+                />
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
